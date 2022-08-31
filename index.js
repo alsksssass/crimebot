@@ -88,7 +88,7 @@ client.on('interactionCreate', async interaction => {
     let time2 = number * 1000
     let time3 = time2 -= 1000
     await interaction.deferReply();
-    await wait(time);
+    await wait(time3);
     const message3 = await interaction.channel.send({ content: string3, fetchReply: true })
     message3.react('❤️').then(console.log).catch(console.error);
   }
