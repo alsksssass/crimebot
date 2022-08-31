@@ -151,7 +151,7 @@ client.on('interactionCreate', async interaction => {
       await interaction.channel.send(qjadls55 + qjadls5 + skadma);
       await interaction.channel.send(xkawjd1 + xkawjd + skadma);
   }
-  else if (commandName === '타이머') {
+   else if (commandName === '타이머') {
     const number = interaction.options.getNumber('타임');
     const string = interaction.options.getString('시간명명');
     const wait = require('node:timers/promises').setTimeout;///딜레이 구문
@@ -162,20 +162,26 @@ client.on('interactionCreate', async interaction => {
     var fktmxmch = time1 / 10
     var fktmxmzkdns = qks - fktmxmch
     var wlsfk = fktmxmch / 1000
+    var akakr = wlsfk / 10
+    console.log(akakr)
     const wndrks = '⌛'
     const tlwkr = '초 카운트 시작'
     const skadma55 = '초 남음'
-    const message1 = await interaction.reply({ content: ekdha + wndrks + string + number + tlwkr + ekdha, fetchReply: true })
+    const message1 = await interaction.reply({ content: ekdha + wndrks + string + wndrks + number + tlwkr + ekdha, fetchReply: true })
     message1.react('❤️')
     await wait(qks);
-    const message2 = await interaction.channel.send(ekdha + wndrks + string + ch + skadma55 + ekdha)
+    const message2 = await interaction.channel.send(ekdha + wndrks + string + wndrks + ch + skadma55 + ekdha)
     message2.react('❤️')
     await wait(fktmxmzkdns);
-    const message3 = await interaction.channel.send(ekdha + wndrks + string + wlsfk +  skadma55 + ekdha)
+    const message3 = await interaction.channel.send(ekdha + wndrks + string + wndrks + wlsfk +  skadma55 + ekdha)
     message3.react('❤️')
     await wait(wlsfk*1000);
-    const message4 = await interaction.channel.send(ekdha + wndrks + string + whdfy + ekdha)
+    const message5 = await interaction.channel.send(ekdha + wndrks + string + wndrks + akakr+  skadma55 + ekdha)
+    message5.react('❤️')
+    await wait(akakr*1000);
+    const message4 = await interaction.channel.send(ekdha + wndrks + string + wndrks + whdfy + ekdha)
     message4.react('❤️').then(console.log).catch(console.error);
+ 
   }
   else if (commandName === '자동단서') {
     const rmx = '설정하신 단서가 끝이 났습니다'
