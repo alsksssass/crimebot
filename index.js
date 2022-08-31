@@ -91,4 +91,4 @@ client.on('interactionCreate', async interaction => {
 //////코멘드 라인 끝
 
 // Login to Discord with your client's token
-client.login(token);
+client.process.env.(token);
