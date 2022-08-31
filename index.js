@@ -85,7 +85,8 @@ client.on('interactionCreate', async interaction => {
   if (commandName === '딜레이') {
     const string3 = interaction.options.getString('딜레이말');
     const number = interaction.options.getNumber('시간');
-    let time = number * 1000
+    let time2 = number * 1000
+    let time3 = time2 -= 1000
     await interaction.deferReply();
     await wait(time);
     const message3 = await interaction.channel.send({ content: string3, fetchReply: true })
@@ -95,7 +96,7 @@ client.on('interactionCreate', async interaction => {
     const string3 = interaction.options.getString('딜레이말1');
     const number = interaction.options.getNumber('시간1');
     let time = number * 1000
-    let time1 = time -= 1
+    let time1 = time -= 1000
     await interaction.deferReply();
     await wait(time1);
     const message3 = await interaction.channel.send({ content: ekdha + string3 + ekdha, fetchReply: true })
