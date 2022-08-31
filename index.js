@@ -176,6 +176,52 @@ client.on('interactionCreate', async interaction => {
     const message4 = await interaction.channel.send(ekdha + string + whdfy + ekdha)
     message4.react('❤️').then(console.log).catch(console.error);
   }
+  else if (commandName === '자동단서') {
+    const rmx = '설정하신 단서가 끝이 났습니다'
+    const string = interaction.options.getString('그냥말');
+    const string1 = interaction.options.getString('그냥말1');
+    const string2 = interaction.options.getString('그냥말2');
+    const string3 = interaction.options.getString('그냥말3');
+    const string4 = interaction.options.getString('그냥말4');
+    const string5 = interaction.options.getString('그냥말5');
+    const string6 = interaction.options.getString('그냥말6');
+    const string7 = interaction.options.getString('그냥말7');
+    const string8 = interaction.options.getString('그냥말8');
+    const string9 = interaction.options.getString('그냥말9');
+    const number = interaction.options.getNumber('타임');
+    console.log(number)
+    const message1 = await interaction.reply({ content: ekdha + string + ekdha, fetchReply: true })
+    message1.react('❤️')
+    await wait(number*1000);
+    const message2 = await interaction.channel.send(ekdha + string1 + ekdha)
+    message2.react('❤️')
+    await wait(number*1000);
+    const message3 = await interaction.channel.send(ekdha + string2 + ekdha)
+    message3.react('❤️')
+    await wait(number*1000);
+    const message4 = await interaction.channel.send(ekdha + string3 + ekdha)
+    message4.react('❤️')
+    await wait(number*1000);
+    const message5 = await interaction.channel.send(ekdha + string4 + ekdha)
+    message5.react('❤️')
+    await wait(number*1000);
+    const message6 = await interaction.channel.send(ekdha + string5 + ekdha)
+    message6.react('❤️')
+    await wait(number*1000);
+    const message7 = await interaction.channel.send(ekdha + string6 + ekdha)
+    message7.react('❤️')
+    await wait(number*1000);
+    const message8 = await interaction.channel.send(ekdha + string7 + ekdha)
+    message8.react('❤️')
+    await wait(number*1000);
+    const message9 = await interaction.channel.send(ekdha + string8 + ekdha)
+    message9.react('❤️')
+    await wait(number*1000);
+    const message99 = await interaction.channel.send(ekdha + string9 + ekdha)
+    message99.react('❤️')
+    const message10 = await interaction.channel.send(ekdha + rmx + ekdha)
+    message10.react('❤️')
+  }
   
 
 });
