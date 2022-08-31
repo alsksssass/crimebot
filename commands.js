@@ -20,7 +20,7 @@ const commands = [
   new SlashCommandBuilder().setName('0').setDescription('용의자 카운트 리셋').setDefaultMemberPermissions(0),
   new SlashCommandBuilder().setName('뷰').setDescription('카운트 현황').setDefaultMemberPermissions(0),
   new SlashCommandBuilder().setName('타이머').setDescription('타이머').addStringOption(option => option.setName('시간명명').setDescription('메시지넣기')).addNumberOption(option => option.setName('타임').setDescription('ex)1분=60,max15분')).setDefaultMemberPermissions(0),
-  
+  new SlashCommandBuilder().setName('자동단서').setDescription('진행자말 일반').addStringOption(option => option.setName('그냥말').setDescription('메시지넣기')).addStringOption(option => option.setName('그냥말1').setDescription('메시지넣기')).addStringOption(option => option.setName('그냥말2').setDescription('메시지넣기')).addStringOption(option => option.setName('그냥말3').setDescription('메시지넣기')).addStringOption(option => option.setName('그냥말4').setDescription('메시지넣기')).addStringOption(option => option.setName('그냥말5').setDescription('메시지넣기')).addStringOption(option => option.setName('그냥말6').setDescription('메시지넣기')).addStringOption(option => option.setName('그냥말7').setDescription('메시지넣기')).addStringOption(option => option.setName('그냥말8').setDescription('메시지넣기')).addStringOption(option => option.setName('그냥말9').setDescription('메시지넣기')).addNumberOption(option => option.setName('타임').setDescription('ex)1분=60,max15분')).setDefaultMemberPermissions(0),
 ]
   .map(command => command.toJSON());
 
