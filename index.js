@@ -6,6 +6,20 @@ const { RESTJSONErrorCodes } = require('discord.js');
 
 ////랜덤구문
 ////참가자 코드부분(추가조사권)
+let qjadls1 = 0  ///범인1
+let qjadls11 = '1번 용의자'
+let qjadls2 = 0   ///범인2
+let qjadls22 = '2번 용의자'   ///범인2
+let qjadls3 = 0  ///범인3
+let qjadls33 = '3번 용의자'  ///범인3
+let qjadls4 = 0  ////범인4
+let qjadls44 = '4번 용의자'  ////범인4
+let qjadls5 = 0
+let qjadls55 = '5번 용의자'
+let xkawjd = 0    ///탐정
+let xkawjd1 = '6번 용의자'    ///탐정
+let skadma = '개 카운트 됨'
+/////////
 
 /////////
 /////단서변수
@@ -85,6 +99,55 @@ client.on('interactionCreate', async interaction => {
     await wait(time);
     const message3 = await interaction.channel.send({ content: ekdha + string3 + ekdha, fetchReply: true })
     message3.react('❤️').then(console.log).catch(console.error);
+  }
+    else if (commandName === '1') {
+      qjadls1 += 1
+      await interaction.reply(qjadls1 + skadma);
+    }
+
+    else if (commandName === '2') {
+      qjadls2 += 1
+      await interaction.reply(qjadls2 + skadma);
+    }
+
+    else if (commandName === '3') {
+      qjadls3 += 1
+      await interaction.reply(qjadls3 + skadma);
+    }
+
+    else if (commandName === '4') {
+      qjadls4 += 1
+      await interaction.reply(qjadls4 + skadma);
+    }
+
+    else if (commandName === '5') {
+      qjadls5 += 1
+      await interaction.reply(qjadls5 + skadma);
+    }
+
+    else if (commandName === '6') {
+      xkawjd += 1
+      await interaction.reply(xkawjd + skadma);
+    }
+
+    else if (commandName === '리셋') {
+      qjadls1 *= 0
+      qjadls2 *= 0
+      qjadls3 *= 0
+      qjadls4 *= 0
+      qjadls5 *= 0
+       xkawjd *= 0 
+      await interaction.reply('카운트 리셋');
+          
+
+    }
+  else if (commandName === '뷰') {
+      await interaction.reply(qjadls11 + qjadls1 + skadma);
+      await interaction.channel.send(qjadls22 + qjadls2 + skadma);
+      await interaction.channel.send(qjadls33 + qjadls3 + skadma);
+      await interaction.channel.send(qjadls44 + qjadls4 + skadma);
+      await interaction.channel.send(qjadls55 + qjadls5 + skadma);
+      await interaction.channel.send(xkawjd1 + xkawjd + skadma);
   }
 
 });
