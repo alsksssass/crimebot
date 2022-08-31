@@ -78,7 +78,7 @@ client.on('interactionCreate', async interaction => {
     message3.react('❤️').then(console.log).catch(console.error);
   }
   if (commandName === '딜레이박스') {
-    const string3 = interaction.options.getString('딜레이말');
+    const string3 = interaction.options.getString('딜레이말1');
     const number = interaction.options.getNumber('시간1');
     let time = number * 1000
     await interaction.deferReply();
