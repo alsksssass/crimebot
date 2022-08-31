@@ -95,8 +95,9 @@ client.on('interactionCreate', async interaction => {
     const string3 = interaction.options.getString('딜레이말1');
     const number = interaction.options.getNumber('시간1');
     let time = number * 1000
+    let time1 = time -= 1
     await interaction.deferReply();
-    await wait(time);
+    await wait(time1);
     const message3 = await interaction.channel.send({ content: ekdha + string3 + ekdha, fetchReply: true })
     message3.react('❤️').then(console.log).catch(console.error);
   }
