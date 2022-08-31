@@ -15,7 +15,7 @@ const commands = [
 ]
   .map(command => command.toJSON());
 
-const rest = new REST({ version: '10' }).setToken(token);
+const rest = new REST({ version: '10' }).setToken(process.env.token);
 
 rest.put(Routes.applicationCommands(clientId), { body: commands })
   .then(() => console.log('코멘드 등록 성공!'))
