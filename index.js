@@ -151,7 +151,7 @@ client.on('interactionCreate', async interaction => {
       await interaction.channel.send(qjadls55 + qjadls5 + skadma);
       await interaction.channel.send(xkawjd1 + xkawjd + skadma);
   }
- else if (commandName === '타이머') {
+  else if (commandName === '타이머') {
     const number = interaction.options.getNumber('타임');
     const wait = require('node:timers/promises').setTimeout;///딜레이 구문
     var time = number * 1000
@@ -175,8 +175,9 @@ client.on('interactionCreate', async interaction => {
     const message2 = await interaction.channel.send(ekdha + ch + skadma55 + ekdha)
     message2.react('❤️')
     await wait(fktmxmzkdns);
-    const message3 = await interaction.channel.send(ekdha +WLsfk +  skadma55 + ekdha)
+    const message3 = await interaction.channel.send(ekdha + WLsfk +  skadma55 + ekdha)
     message3.react('❤️')
+    await wait(WLsfk);
     const message4 = await interaction.channel.send('```타이머 종료되었습니다!```')
     message4.react('❤️').then(console.log).catch(console.error);
   }
