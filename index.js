@@ -159,21 +159,22 @@ client.on('interactionCreate', async interaction => {
     var time1 = number * 1000
     var qks = time1 / 2
     var ch = qks / 1000
-    var fktmxmch = time1 / 8
+    var fktmxmch = time1 / 10
     var fktmxmzkdns = qks - fktmxmch
     var wlsfk = fktmxmch / 1000
+    const wndrks = '⌛'
     const tlwkr = '초 카운트 시작'
     const skadma55 = '초 남음'
-    const message1 = await interaction.reply({ content: ekdha + string + number + tlwkr + ekdha, fetchReply: true })
+    const message1 = await interaction.reply({ content: ekdha + wndrks + string + number + tlwkr + ekdha, fetchReply: true })
     message1.react('❤️')
     await wait(qks);
-    const message2 = await interaction.channel.send(ekdha + string + ch + skadma55 + ekdha)
+    const message2 = await interaction.channel.send(ekdha + wndrks + string + ch + skadma55 + ekdha)
     message2.react('❤️')
     await wait(fktmxmzkdns);
-    const message3 = await interaction.channel.send(ekdha + string + wlsfk +  skadma55 + ekdha)
+    const message3 = await interaction.channel.send(ekdha + wndrks + string + wlsfk +  skadma55 + ekdha)
     message3.react('❤️')
     await wait(wlsfk*1000);
-    const message4 = await interaction.channel.send(ekdha + string + whdfy + ekdha)
+    const message4 = await interaction.channel.send(ekdha + wndrks + string + whdfy + ekdha)
     message4.react('❤️').then(console.log).catch(console.error);
   }
   else if (commandName === '자동단서') {
