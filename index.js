@@ -151,6 +151,23 @@ client.on('interactionCreate', async interaction => {
       await interaction.channel.send(qjadls55 + qjadls5 + skadma);
       await interaction.channel.send(xkawjd1 + xkawjd + skadma);
   }
+   else if (commandName === '타이머') {
+    const number = interaction.options.getNumber('타임');
+    let time = number * 1000
+    let time1 = time -= 1000
+    let qks = time1 /= 2
+    let ch = qks /= 1000
+    const tlwkr = '초 카운트 시작'
+    const skadma55 = '초 남음'
+    const message1 = await interaction.reply(number + tlwkr)
+    message1.react('❤️')
+    await wait(qks);
+    const message2 = await interaction.channel.send(ekdha + ch + skadma55 + ekdha)
+    message2.react('❤️')
+    await wait(qks);
+    const message3 = await interaction.channel.send('타이머 종료되었습니다!')
+    message3.react('❤️').then(console.log).catch(console.error);
+  }
 
 });
 //////코멘드 라인 끝
