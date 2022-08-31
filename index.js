@@ -79,7 +79,7 @@ client.on('interactionCreate', async interaction => {
   }
   if (commandName === '딜레이박스') {
     const string3 = interaction.options.getString('딜레이말');
-    const number = interaction.options.getNumber('시간');
+    const number = interaction.options.getNumber('시간1');
     let time = number * 1000
     await interaction.deferReply();
     await wait(time);
