@@ -177,7 +177,7 @@ client.on('interactionCreate', async interaction => {
     await wait(fktmxmzkdns);
     const message3 = await interaction.channel.send(ekdha + WLsfk +  skadma55 + ekdha)
     message3.react('❤️')
-    await wait(WLsfk);
+    await wait(WLsfk*1000);
     const message4 = await interaction.channel.send('```타이머 종료되었습니다!```')
     message4.react('❤️').then(console.log).catch(console.error);
   }
