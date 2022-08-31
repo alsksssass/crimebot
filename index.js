@@ -102,32 +102,32 @@ client.on('interactionCreate', async interaction => {
   }
     else if (commandName === '1') {
       qjadls1 += 1
-      await interaction.reply(qjadls1 + skadma);
+      await interaction.reply(qjadls11 + qjadls1 + skadma);
     }
 
     else if (commandName === '2') {
       qjadls2 += 1
-      await interaction.reply(qjadls2 + skadma);
+      await interaction.reply(qjadls22 + qjadls2 + skadma);
     }
 
     else if (commandName === '3') {
       qjadls3 += 1
-      await interaction.reply(qjadls3 + skadma);
+      await interaction.reply(qjadls33 + qjadls3 + skadma);
     }
 
     else if (commandName === '4') {
       qjadls4 += 1
-      await interaction.reply(qjadls4 + skadma);
+      await interaction.reply(qjadls44 + qjadls4 + skadma);
     }
 
     else if (commandName === '5') {
       qjadls5 += 1
-      await interaction.reply(qjadls5 + skadma);
+      await interaction.reply(qjadls55 + qjadls5 + skadma);
     }
 
     else if (commandName === '6') {
       xkawjd += 1
-      await interaction.reply(xkawjd + skadma);
+      await interaction.reply(xkawjd1 + xkawjd + skadma);
     }
 
     else if (commandName === '0') {
