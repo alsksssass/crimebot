@@ -151,23 +151,34 @@ client.on('interactionCreate', async interaction => {
       await interaction.channel.send(qjadls55 + qjadls5 + skadma);
       await interaction.channel.send(xkawjd1 + xkawjd + skadma);
   }
-   else if (commandName === '타이머') {
+ else if (commandName === '타이머') {
     const number = interaction.options.getNumber('타임');
     const wait = require('node:timers/promises').setTimeout;///딜레이 구문
-    let time = number * 1000
-    let time1 = time -= 1000
-    let qks = time1 /= 2
-    let ch = qks /= 1000
+    var time = number * 1000
+    var time1 = time - 1000
+    var qks = time1 / 2
+    var ch = qks / 1000
+    var fktmxmch = time1 / 10
+    var fktmxmzkdns = qks - fktmxmch
+    var WLsfk = fktmxmch / 1000
+    console.log(time)
+    console.log(time1)
+    console.log(qks)
+    console.log(fktmxmch)
+    console.log(fktmxmzkdns)
+    console.log(WLsfk)
     const tlwkr = '초 카운트 시작'
     const skadma55 = '초 남음'
     const message1 = await interaction.reply({ content: ekdha + number + tlwkr + ekdha, fetchReply: true })
     message1.react('❤️')
-    await wait(time1);
+    await wait(qks);
     const message2 = await interaction.channel.send(ekdha + ch + skadma55 + ekdha)
     message2.react('❤️')
-    await wait(time1);
-    const message3 = await interaction.channel.send('```타이머 종료되었습니다!```')
-    message3.react('❤️').then(console.log).catch(console.error);
+    await wait(fktmxmzkdns);
+    const message3 = await interaction.channel.send(ekdha +WLsfk +  skadma55 + ekdha)
+    message3.react('❤️')
+    const message4 = await interaction.channel.send('```타이머 종료되었습니다!```')
+    message4.react('❤️').then(console.log).catch(console.error);
   }
 
 });
