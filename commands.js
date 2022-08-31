@@ -19,7 +19,7 @@ const commands = [
   new SlashCommandBuilder().setName('6').setDescription('용의자 카운트').setDefaultMemberPermissions(0),
   new SlashCommandBuilder().setName('0').setDescription('용의자 카운트 리셋').setDefaultMemberPermissions(0),
   new SlashCommandBuilder().setName('뷰').setDescription('카운트 현황').setDefaultMemberPermissions(0),
-  new SlashCommandBuilder().setName('타이머').setDescription('타이머').addNumberOption(option => option.setName('타임').setDescription('ex)1분=60,max15분')).setDefaultMemberPermissions(0),
+  new SlashCommandBuilder().setName('타이머').setDescription('타이머(테스트중_)').addNumberOption(option => option.setName('타임').setDescription('ex)1분=60,max15분')).setDefaultMemberPermissions(0),
   
 ]
   .map(command => command.toJSON());
