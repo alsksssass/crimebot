@@ -130,7 +130,7 @@ client.on('interactionCreate', async interaction => {
       await interaction.reply(xkawjd + skadma);
     }
 
-    else if (commandName === '리셋') {
+    else if (commandName === '0') {
       qjadls1 *= 0
       qjadls2 *= 0
       qjadls3 *= 0
