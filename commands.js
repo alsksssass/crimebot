@@ -20,8 +20,6 @@ const commands = [
   new SlashCommandBuilder().setName('0').setDescription('용의자 카운트 리셋').setDefaultMemberPermissions(0),
   new SlashCommandBuilder().setName('뷰').setDescription('카운트 현황').setDefaultMemberPermissions(0),
 ]
-
-]
   .map(command => command.toJSON());
 
 const rest = new REST({ version: '10' }).setToken(process.env.token);
